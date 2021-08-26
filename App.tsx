@@ -33,7 +33,7 @@ export default function App() {
 
 
 			</View>
-			<Text>oi :) aaaa</Text>
+			<Text>oi :)</Text>
 			<StatusBar style="auto" />
 		</View>
 	);
