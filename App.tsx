@@ -2,6 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
+const LinksImportantes = ()=>{
+    return(//aqui dentro ficará o JSX
+    <View>
+        <Text>Meu primeiro componente (medo)</Text>
+    </View>); 
+};
+    
 export default function App() {
     return (
         <View style={styles.container}>
@@ -29,7 +36,8 @@ export default function App() {
                 </Image>
                 
             </View>
-            <Text>oi :) aaaa</Text>
+            <Text>oi </Text>
+            <LinksImportantes />
             <StatusBar style="auto"  />
         </View>
     );
