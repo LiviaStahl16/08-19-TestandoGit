@@ -37,7 +37,7 @@ const stylesLinkImportantes = StyleSheet.create({
         paddingHorizontal:40,
         paddingVertical:10,
         
-        borderColor: "red",
+        borderBottomColor: "#F0F0F0",
         borderBottomWidth: 1,
 
     }
