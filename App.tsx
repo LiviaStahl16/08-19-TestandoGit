@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {Text, View, StyleSheet } from 'react-native';
 
 import Routes from './src/routes';
 
 export default function App() {
     return (
-        <view style={styles.container}>
+        <View style={styles.container}>
             <Routes/>
-        </view>
+        </View>
 
     );
 }
