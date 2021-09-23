@@ -7,6 +7,8 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {stylesLink, stylesLinkImportantes, styles} from './styles';
 import { StackNavigatorParamList } from '../../../types';
 
+import Post from '../Post';
+
 const LinkItem = (props:any)=>{
     return(
         <Text style={stylesLink.text}>{props.name}</Text>
@@ -63,12 +65,13 @@ const Home = () => {
             </View>
             <LinksImportantes />
             <StatusBar style="auto"  />
-            <View style={styles.conteudoFacebook}>
+            <Post />
+           {/* <View style={styles.conteudoFacebook}>
                 <TouchableOpacity style={styles.meubotao} onPress={irParaTelaLogin}>
                     <Text style={styles.meuBotaoTexto}>Ir para a segunda tela</Text>
                 </TouchableOpacity>
-            </View>
-        </View>
+                </View>*/}
+                </View>
     );
                 }
 

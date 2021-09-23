@@ -54,12 +54,11 @@ export const styles = StyleSheet.create({
 
     meubotao:{
         backgroundColor: '#4369B0',
-
         height: 40,
         alignItems: "center",
         justifyContent: "center",
         marginHorizontal: 40,
-        borderRadius: 10
+        borderRadius: 10,
     },
 
     conteudoFacebook:{
@@ -70,6 +69,6 @@ export const styles = StyleSheet.create({
     },
 
     meuBotaoTexto:{
-        backgroundColor: "#F5FFFF"
+        color: "#F5FFFF"
     }
 });
