@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const Post = () => {
     return (
@@ -48,6 +48,23 @@ const Post = () => {
                     <Image style={styles.linksShareBlocoIcone} source={require('../../assets/button-share.png')}></Image>
                     <Text style={styles.likesTexto}>Compartilhar</Text>
                 </View>
+
+
+            </View>
+
+            <View style={styles.footerPost}>
+                <TouchableOpacity style={styles.btnLearnMore}>
+                    <Text style={styles.btnLearnMoreText}>Learn More</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.btnMensagem}>
+                    <Image style={{ width: 16, height: 16 }} source={require('../../assets/mensagem.png')} />
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.btn3Pontos}>
+                    <Image style={{ height: 3, width: 16 }} source={require('../../assets/3pontos.png')} />
+                </TouchableOpacity>
+
 
             </View>
 
@@ -136,7 +153,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginHorizontal: 20,
-        marginTop: 10,
+        marginVertical: 20,
 
     },
 
@@ -149,6 +166,45 @@ const styles = StyleSheet.create({
     linksShareBlocoIcone: {
         width: 18,
         height: 18,
+
+    },
+
+    footerPost: {
+        height: 43,
+        flexDirection: 'row',
+
+    },
+
+    btnLearnMore: {
+        flex: 8,
+        backgroundColor: '#3D7BE2',
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    btnMensagem: {
+        flex: 2,
+        marginLeft: 10,
+        backgroundColor: '#3D7BE2',
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    btn3Pontos: {
+        flex: 2,
+        marginLeft: 10,
+        borderWidth: 2,
+        borderColor: '#3D7BE2',
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    btnLearnMoreText: {
+        color: '#FDF7FD',
+        fontSize: 16,
     }
 
 });

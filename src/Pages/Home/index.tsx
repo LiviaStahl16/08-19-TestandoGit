@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useNavigation } from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
@@ -64,13 +64,18 @@ const Home = () => {
                 </Image>  
             </View>
             <LinksImportantes />
-            <StatusBar style="auto"  />
-            <Post />
-           {/* <View style={styles.conteudoFacebook}>
+
+           { <View style={styles.conteudoFacebook}>
                 <TouchableOpacity style={styles.meubotao} onPress={irParaTelaLogin}>
                     <Text style={styles.meuBotaoTexto}>Ir para a segunda tela</Text>
                 </TouchableOpacity>
-                </View>*/}
+
+                <StatusBar style="auto"  />
+            <ScrollView>
+            <Post />
+            </ScrollView>
+            
+                </View>}
                 </View>
     );
                 }
