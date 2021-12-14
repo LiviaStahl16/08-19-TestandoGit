@@ -5,7 +5,7 @@ export const stylesLink = StyleSheet.create({
     text:{
         //backgroundColor:"red",
         marginTop:10,
-        color: '#4A4A4C',
+        color: 'white',
         fontSize: 13.71,
 
     }
@@ -27,10 +27,11 @@ export const stylesLinkImportantes = StyleSheet.create({
 export const styles = StyleSheet.create({
     container: {
         flex:1,
+        backgroundColor: "black",
     },
     header:{
         minHeight:93,
-        backgroundColor: "#4369B0",
+        backgroundColor: "green",
         paddingTop:40,
         flexDirection:"row",
         justifyContent:"space-between",
@@ -38,7 +39,8 @@ export const styles = StyleSheet.create({
     },
     inputTextView:{
         flex:1,
-        backgroundColor:"#2C4877",
+        backgroundColor:"white",
+        textDecorationColor: "black",
         height:40,
         marginHorizontal:10,
         alignItems: "center",
@@ -53,18 +55,19 @@ export const styles = StyleSheet.create({
     },
 
     meubotao:{
-        backgroundColor: '#4369B0',
+        backgroundColor: 'gray',
         height: 40,
         alignItems: "center",
         justifyContent: "center",
-        marginHorizontal: 40,
-        borderRadius: 10,
+        borderRadius: 10
+
+        
     },
 
     conteudoFacebook:{
         flex: 1,
        // backgroundColor: "#F0F500",
-        justifyContent: "flex-end",
+       paddingTop: 40
     },
 
     meuBotaoTexto:{

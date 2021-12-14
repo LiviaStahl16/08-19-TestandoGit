@@ -9,6 +9,8 @@ import { StackNavigatorParamList } from '../../../types';
 
 import Post from '../Post';
 
+
+
 const LinkItem = (props:any)=>{
     return(
         <Text style={stylesLink.text}>{props.name}</Text>
@@ -19,11 +21,9 @@ const LinkItem = (props:any)=>{
 const LinksImportantes = ()=>{
     return(//Aqui dentro ficará o nosso JSX
         <View style={stylesLinkImportantes.container}>
-            <LinkItem name="Home"/>
-            <LinkItem name="Post"/>
-            <LinkItem name="Videos"/>
-            <LinkItem name="Photos"/>
-            <LinkItem name="Community"/>
+            <LinkItem name="Início"/>
+            <LinkItem name="Pesquisar"/>
+            <LinkItem name="Sua biblioteca"/>
         </View>
     );
 };
@@ -41,10 +41,6 @@ const Home = () => {
     return(
         <View style={styles.container}>
             <View style={styles.header}>
-                <Image source={
-                    require("../../assets/arrow-left.png")
-                    }>
-                </Image>
                 <View style={styles.inputTextView}>
                     <Image source={
                         require("../../assets/ei_search.png")
@@ -52,22 +48,18 @@ const Home = () => {
                     </Image>
                     <TextInput
                         placeholder="Search"
-                        placeholderTextColor="#F5FFFF"
+                        placeholderTextColor="black"
                         style={styles.textInput}
                         >
 
                     </TextInput>
-                </View>
-                <Image source={
-                    require("../../assets/share.png")
-                    }>
-                </Image>  
+                </View> 
             </View>
             <LinksImportantes />
 
            { <View style={styles.conteudoFacebook}>
                 <TouchableOpacity style={styles.meubotao} onPress={irParaTelaLogin}>
-                    <Text style={styles.meuBotaoTexto}>Ir para a segunda tela</Text>
+                    <Text style={styles.meuBotaoTexto}>Voltar para tela de login</Text>
                 </TouchableOpacity>
 
                 <StatusBar style="auto"  />
@@ -80,4 +72,7 @@ const Home = () => {
     );
                 }
 
+                
+
 export default Home;
+

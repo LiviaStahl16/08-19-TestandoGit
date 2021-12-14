@@ -1,16 +1,17 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import { initialWindowMetrics } from "react-native-safe-area-context";
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#4369B0"
+        backgroundColor: "black"
     },
 
     logoContainer: {
         alignItems: "center",
         justifyContent: "center",
-        marginRight: 320
+        marginRight: 210
 
     },
 
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
 
     formContainer: {
         padding: 20,
-        marginTop: 60
+        marginTop: 20
     },
 
     title: {
@@ -43,7 +44,8 @@ export const styles = StyleSheet.create({
 
     buttonContainer: {
         height: 50,
-        backgroundColor: "#213873"
+        backgroundColor: "green",
+        borderRadius: 20
     },
 
     buttonText: {
@@ -51,13 +53,37 @@ export const styles = StyleSheet.create({
         color: "white",
         fontSize: 20,
         marginTop: 12,
-        fontWeight: "bold"
+        fontWeight: "bold",
+    },
+
+    linkC: {
+        
     },
 
     link: {
         color: "white",
+        height: 50,
+        marginTop: 12,
+        marginLeft: 20,
+        marginRight: 20,
+        backgroundColor: "#213873",
         textAlign: "center",
-        padding: 80,
+        padding: 20,
         textDecorationLine: "underline"
-    }
+    },
+
+    frase: {
+        color: "white",
+        fontSize: 35,
+        textAlign: "center",
+        marginBottom: 30,
+        fontWeight: "bold"
+    }, 
+
+    new: {
+        color: "gray",
+        marginTop: 30,
+        textAlign: "center",
+        textDecorationLine: "underline"
+    },
 });

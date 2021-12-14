@@ -1,3 +1,5 @@
+//Alunos: Livia Stahl e Larissa Kuramoto (1029)
+
 import React from 'react';
 import { View, Text, Image, TextInput, TouchableOpacity, Linking } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
@@ -20,37 +22,45 @@ const Login = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Facebook</Text>
+            <Text style={styles.title}>Spotify</Text>
             <View style={styles.logoContainer}>
 
                 <Image
                     style={styles.logo}
-                    source={require("../../assets/face.png")
+                    source={require("../../assets/spotify.png")
                     } />
             </View>
 
             <View style={styles.formContainer}>
 
+            <Text style={styles.frase}>Música para todos.</Text> 
+
                 <TextInput
-                    placeholder="Email"
+                    placeholder="E-mail ou nome de usuário"
                     style={styles.input}
                 />
 
                 <TextInput
-                    placeholder="Password"
+                    placeholder="Senha"
                     secureTextEntry
                     style={styles.input}
                 />
 
                 <TouchableOpacity style={styles.buttonContainer} onPress={irParaTelaHome}>
-                    <Text style={styles.buttonText}>Log In </Text>
+                    <Text style={styles.buttonText}>Entrar </Text>
                 </TouchableOpacity>
             </View>
 
             <Text
                 style={styles.link}
                 onPress={() => { Linking.openURL('https://facebook.com'); }}>
-                Sign Up for Facebook</Text>
+                Entrar com Facebook</Text>
+
+                <Text
+                style={styles.new}
+                onPress={() => { Linking.openURL('https://spotify.com'); }}>
+                NÃO TEM UMA CONTA? INSCREVA-SE</Text>
+
         </View>
     );
 }
