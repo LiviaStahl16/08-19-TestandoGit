@@ -66,7 +66,7 @@ export default function App() {
     <Text>Agenda</Text>
     </View>
       <View style={styles.containerView}>
-      <FlatList
+      <FlatList style={styles.teste}
         data={dados}
         keyExtractor={(item)=>item.id}
         renderItem={renderItemAgenda}
@@ -102,6 +102,12 @@ const styles = StyleSheet.create({
     //backgroundColor: 'blue',
     borderRadius:50,
     marginRight:15,
+  },
+
+  teste: {
+    flex: 1,
+    backgroundColor: "red",
+
   }
 });
 
